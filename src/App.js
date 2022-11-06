@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Component } from "react";
+import FunctionClick from "./components/FunctionClick";
+import ClassClick from "./components/ClassClick";
+// import Counter from "./components/Counter";
+// import Message from "./components/Message";
+// import Great from "./components/Great";
+// import Welcome from "./components/Welcome";
+// import Hello from "./components/Hello";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <FunctionClick />
+        <ClassClick />
+        {/* <Counter /> */}
+        {/* <Message /> */}
+        {/* <Great name="Mehedi">
+          <p>This is Children props</p>
+        </Great>
+        <Great name="Hasan">
+          <button>action</button>
+        </Great>
+        <Great name="Rahat" /> */}
+        {/* <Hello /> */}
+        {/* <Welcome name="Mehedi">
+          <p>This is children</p>
+        </Welcome>
+        <Welcome name="Hasan" />
+        <Welcome name="Rahat" /> */}
+      </div>
+    );
+  }
 }
 
 export default App;
