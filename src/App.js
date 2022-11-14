@@ -1,18 +1,14 @@
 import "./App.css";
-import { Component } from "react";
-import ComponentC from "./components/ComponentC";
-import { UserProvider } from "./components/userContext";
+import PostForm from "./components/PostForm";
+// import PostList from "./components/PostList";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <UserProvider value="Mehedi">
-          <ComponentC />
-        </UserProvider>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      {/* <PostList /> */}
+      <PostForm />
+    </div>
+  );
 }
 
 export default App;
