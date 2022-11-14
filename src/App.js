@@ -1,12 +1,15 @@
 import "./App.css";
 import { Component } from "react";
-import Form from "./components/Form";
+import ComponentC from "./components/ComponentC";
+import { UserProvider } from "./components/userContext";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Form />
+        <UserProvider value="Mehedi">
+          <ComponentC />
+        </UserProvider>
       </div>
     );
   }
